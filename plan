@@ -1,0 +1,15 @@
+UserProfile
+    classes(Seperate easy to check)
+        Database.php
+        User.php
+    include
+        header.php
+        footer.php
+    sql
+        creates_profiles_table
+    images
+    index.php
+    profile.php (bonus)
+    profiles.php
+    submit.php
+    success.php ()

@@ -1,0 +1,224 @@
+:root {
+    --font-main: poppins, sans-serif;
+    --color-bg: #ffffff;
+    --color-text: #0f0f0f;
+    --color-primary: #000000;
+    --color-secondary: #555555;
+    --color-border: #e6e6e6;
+    --color-surface: #fafafa;
+    --radius: 10px;
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+.app-header,
+.app-footer {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    padding: 1.25rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+.app-title {
+    font-size: 2.8rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    color: var(--color-bg);
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+    position: relative;
+}
+
+.app-nav {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-link {
+    color: var(--color-bg);
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+.nav-link:hover {
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-weight: 300;
+    position: relative;
+}
+main {
+    max-width: 640px;
+    margin: 3rem auto;
+    background-color: var(--color-surface);
+    padding: 2.5rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--color-border);
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    letter-spacing: -0.5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 1.25rem;
+    font-weight: 500;
+    color: var(--color-secondary);
+}
+
+form input,
+form textarea {
+    padding: 0.85rem;
+    margin-top: 0.5rem;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #ffffff;
+    transition: border-color 0.25s ease, background-color 0.25s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    background-color: #fcfcfc;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+form button {
+    margin-top: 2rem;
+    padding: 0.85rem 1.5rem;
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+form button:hover {
+    background-color: #111111;
+    transform: translateY(-2px);
+}
+.profile-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.profile-card {
+    background-color: var(--color-bg);
+    padding: 1rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-4px);
+}
+
+.profile-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.profile-card h3 {
+    font-size: 1.2rem;
+    color: var(--color-text);
+    margin-top: 0.5rem;
+    text-decoration: None;
+}
+
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.success-page {
+    text-align: center;
+}
+
+.success-title {
+    font-size: 1.6rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.view-profiles-button {
+    display: inline-block;
+    padding: 0.85rem 1.5rem;
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.view-profiles-button:hover {
+    background-color: #111111;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1.25rem;
+    }
+
+    main {
+        padding: 1.75rem;
+    }
+
+    .app-nav {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .profile-list {
+        grid-template-columns: 1fr;
+    }
+}

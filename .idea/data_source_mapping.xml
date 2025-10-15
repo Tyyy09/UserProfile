@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourcePerFileMappings">
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/be625b19-98d8-4fe4-a165-53c14d2bc9dc/console.sql" value="be625b19-98d8-4fe4-a165-53c14d2bc9dc" />
+    <file url="file://$PROJECT_DIR$/sql/create_profiles_table.sql" value="be625b19-98d8-4fe4-a165-53c14d2bc9dc" />
+  </component>
+</project>
